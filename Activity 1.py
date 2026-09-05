@@ -1,17 +1,5 @@
-v = 4
-w = 5
-x = 8
-y = 2
-z = 0
-z = (v+w) * x / y;   
-print("Value of (v+w) * x/ y is ",  z)
-
-
-
-name = "Alex"
-age = 0
-  
-if name == "Alex" or name == "John" and age >= 2 : 
-  print("Hello! Welcome.")
-else :
-  print("Good Bye!!")
+Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+============ RESTART: C:\Users\israt\OneDrive\Desktop\Activity 1.py ============
+Value of z is: 18

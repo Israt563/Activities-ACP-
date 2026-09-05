@@ -1,13 +1,20 @@
-# Creating different variables
-x = 5
-y = "John"
-print(x)
-print(y)
+# --- Multi-variable Unpacking & Direct Assignment ---
+x, y = 5, "John"
+company = "Codingal"
 
-codingal = "codingal"
-print(codingal)
+# Print using concise f-string representations
+print(f"Number: {x}")
+print(f"Name: {y}")
+print(f"Company: {company}\n")
 
-# User Input
-name = input("enter your name: ")
+# --- Interactive Input with Fallback Default ---
+# strip() removes accidental whitespace; 'or' provides a default if blank
+user_name = input("Enter your name: ").strip().title() or "Guest"
 
-print("\nHello", name, "\nwelcome to codingal")
+# --- Clean Multiline Output ---
+welcome_message = f"""
+Hello, {user_name}!
+Welcome to {company}.
+"""
+
+print(welcome_message)

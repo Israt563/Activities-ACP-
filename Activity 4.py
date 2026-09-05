@@ -1,23 +1,13 @@
-a = int(input("enter a value: "))
-b = int(input("enter value 2 :"))
-c = int(input("enter value 3: "))
-
-avg = (a + b + c) / 3
-print("avg =", avg)
-
-if avg > a and avg > b and avg > c:
-    print("%d is higher than %d, %d, %d" %(avg, a, b, c))
-elif avg > a and avg > b:
-    print("%d is higher than %d, %d" %(avg, a, b))
-elif avg > a and avg > c:
-    print("%d is higher than %d, %d" %(avg, a, c))
-elif avg > b and avg > c:
-    print("%d is higher than %d, %d" %(avg, b, c))
-elif avg > a:
-    print("%d is just higher than %d" %(avg, a))
-elif avg > b:
-    print("%d is just higher than %d" %(avg, b))
-elif avg > c:
-    print("%d is just higher than %d" %(avg, c))
-else:
-  print("invalid input")
+Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+= RESTART: C:\Users\israt\OneDrive\Desktop\ACPL4.py
+Total points       : 550
+Average per team   : 110.0
+Total reward stars : 1100
+Full boxes packed  : 44
+Leftover stars     : 0
+Better than last week? : True
+Same as last week?     : False
+Net total after updates: 565
+Final boxes packed     : 45

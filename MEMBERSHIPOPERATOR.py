@@ -1,42 +1,41 @@
-print("Enter Marks Obtained in 5 Subjects:")
+# ============================================================
+# Student Grade Evaluator
+# ============================================================
 
-markOne = int(input())
-markTwo = int(input())
-markThree = int(input())
-markFour = int(input())
-markFive = int(input())
+# --- Part 1: Collect & Validate Marks with a Loop ---
+marks = []
+NUM_SUBJECTS = 5
 
-tot = markOne + markTwo + markThree + markFour + markFive
-avg = int(tot / 5)
+print(f"Enter Marks Obtained in {NUM_SUBJECTS} Subjects:")
 
-validRange = range(0, 101)
+for i in range(1, NUM_SUBJECTS + 1):
+    score = int(input(f"Subject {i}: "))
+    marks.append(score)
 
-if avg not in validRange:
-    print("Invalid Input!")
+# --- Part 2: Calculate Total & Average ---
+tot = sum(marks)
+avg = tot / NUM_SUBJECTS  # Float division preserves accuracy
 
-elif avg in range(91, 101):
-    print("Your Grade is A1")
+print(f"\nTotal Marks : {tot} / {NUM_SUBJECTS * 100}")
+print(f"Average     : {avg:.2f}")
 
-elif avg in range(81, 91):
-    print("Your Grade is A2")
+# Check overall input validity (all marks must be between 0 and 100)
+if any(m < 0 or m > 100 for m in marks):
+    print("Invalid Input! Individual subject marks must be 0–100.")
 
-elif avg in range(71, 81):
-    print("Your Grade is B1")
+else:
+    # --- Part 3: Efficient Grade Lookup ---
+    # Tuple format: (Minimum Average, Grade String)
+    grade_thresholds = [
+        (91, "A1"), (81, "A2"), (71, "B1"), (61, "B2"),
+        (51, "C1"), (41, "C2"), (33, "D"),  (21, "E1"), (0, "E2")
+    ]
 
-elif avg in range(61, 71):
-    print("Your Grade is B2")
+    # Evaluate grade based on descending thresholds
+    assigned_grade = "Invalid"
+    for min_score, grade in grade_thresholds:
+        if avg >= min_score:
+            assigned_grade = grade
+            break
 
-elif avg in range(51, 61):
-    print("Your Grade is C1")
-
-elif avg in range(41, 51):
-    print("Your Grade is C2")
-
-elif avg in range(33, 41):
-    print("Your Grade is D")
-
-elif avg in range(21, 33):
-    print("Your Grade is E1")
-
-elif avg in range(0, 21):
-    print("Your Grade is E2")
+    print(f"Your Grade is {assigned_grade}")

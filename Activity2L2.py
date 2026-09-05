@@ -1,11 +1,16 @@
+Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+= RESTART: C:\Users\israt\OneDrive\Desktop\Activity2L2.py
 # Step 1: Waking up
-print("I wake up at 7 AM.")
+I wake up 7 AM.
 
 # Step 2: Going to school
-print("I go to school at 8 AM.")
+I go to school 8 AM.
 
-# Step 3: Playing after school
-print("I play with my friends in the evening.")
+# Step 3: Playing
+I play with my friends in the evening.
 
 # Step 4: Studying
-print("I study for 2 hours at night.")
+I study for 2 hours at night.
+

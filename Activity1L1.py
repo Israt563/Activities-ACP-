@@ -1,12 +1,8 @@
-# Printing a greeting message
-print("Hello, world!")
-
-# Printing my name
-print("My name is Alex.")
-
-# Printing a fun fact about myself
-# print("I love playing soccer.")
-print("I love playing soccer.")
-
-# Performing and printing a simple calculation
-print("The result of 3 + 5 is:", 3 + 5)
+Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+= RESTART: C:\Users\israt\OneDrive\Desktop\Activity1L1.py
+Hello, world! My name is Alex.
+I love playing soccer.
+The result of 3 + 5 is: 8
+The product of 3 * 5 is: 15

@@ -1,9 +1,5 @@
-print("Enter a Number (Numerator): ")
-numn = int(input())
-print("Enter a Number (denominator): ")
-numd = int(input())
-
-if numn%numd==0:
-  print("\n" +str(numn)+ " is divisible by " +str(numd))
-else:
-  print("\n" +str(numn)+ " is not divisible by " +str(numd))
+Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+= RESTART: C:\Users\israt\OneDrive\Desktop\Activity 2.py
+Enter a Number (Numerator): 

@@ -1,22 +1,31 @@
-a = 10
+# Function to print decimal value alongside its binary representation
+def show_bits(label, val):
+    # bin() returns string like '0b1010' or '-0b1010'
+    print(f"{label:<12}: {val:>3} | Binary: {bin(val)}")
 
-b = -10
+# --- Bitwise Right Shift (>>) ---
+a = 12
+b = -12
+shift = 2
 
+print("=== BITWISE RIGHT SHIFT (Floor Division by 2^n) ===")
+show_bits("Original a", a)
+show_bits(f"a >> {shift}", a >> shift)  # Equivalent to 12 // (2**2) = 3
 
-# print bitwise right shift operator
+print("-" * 45)
+show_bits("Original b", b)
+show_bits(f"b >> {shift}", b >> shift)  # Equivalent to -12 // (2**2) = -3
 
-print("a >> 1 =", a >> 1)
+print("\n" + "=" * 45 + "\n")
 
-print("b >> 1 =", b >> 1)
+# --- Bitwise Left Shift (<<) ---
+a = 7
+b = -7
 
- 
-a = 5
+print("=== BITWISE LEFT SHIFT (Multiplication by 2^n) ===")
+show_bits("Original a", a)
+show_bits(f"a << {shift}", a << shift)  # Equivalent to 7 * (2**2) = 28
 
-b = -10
-
- 
-# print bitwise left shift operator
-
-print("a << 1 =", a << 1)
-
-print("b << 1 =", b << 1)
+print("-" * 45)
+show_bits("Original b", b)
+show_bits(f"b << {shift}", b << shift)  # Equivalent to -7 * (2**2) = -28
